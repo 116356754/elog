@@ -1,0 +1,26 @@
+{
+  "name": "ellog",
+  "version": "1.0.0",
+  "description": "a log module for electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/116356754/elog.git"
+  },
+  "keywords": [
+    "electron",
+    "log"
+  ],
+  "author": "wangky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/116356754/elog/issues"
+  },
+  "homepage": "https://github.com/116356754/elog#readme",
+  "dependencies": {
+    "elis": "^1.0.0"
+  }
+}
