@@ -180,8 +180,8 @@ function findLogPath(appName) {
   if (dir) {
     var today = new Date();
     var yr = today.getFullYear();
-    var mo = today.getMonth();
-    var day = today.getDay();
+    var mo = today.getMonth()+1;
+    var day = today.getDate();
     var filename = yr+"_"+mo+'_'+day+'_log.txt'
     return dir + '/' + filename;
   } else {
@@ -255,7 +255,7 @@ function format(msg, formatter) {
       .replace('{level}', msg.level)
       .replace('{text}', msg.text)
       .replace('{y}', date.getFullYear())
-      .replace('{m}', pad(date.getMonth()))
+      .replace('{m}', pad(date.getMonth()+1))
       .replace('{d}', pad(date.getDate()))
       .replace('{h}', pad(date.getHours()))
       .replace('{i}', pad(date.getMinutes()))
@@ -276,7 +276,7 @@ function formatConsole(msg) {
 function formatFile(msg) {
   var date =
       msg.date.getFullYear() + '-' +
-      pad(msg.date.getMonth()) + '-' +
+      pad(msg.date.getMonth()+1) + '-' +
       pad(msg.date.getDate()) + ' ' +
       pad(msg.date.getHours()) + ':' +
       pad(msg.date.getMinutes()) + ':' +
