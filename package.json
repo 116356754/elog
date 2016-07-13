@@ -1,6 +1,6 @@
 {
   "name": "ellog",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "a log module for electron",
   "main": "index.js",
   "scripts": {
